@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Interface Clone</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-light" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="youtube-logo ml-2">
+                </div>
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-home"></i>
+                                <span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-video"></i>
+                                <span>Shorts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Kênh đăng ký</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Kênh của bạn</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-clock"></i>
+                                <span>Video đã xem</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-list"></i>
+                                <span>Danh sách phát</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-video"></i>
+                                <span>Video của bạn</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-clock"></i>
+                                <span>Xem sau</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-thumbs-up"></i>
+                                <span>Video đã thích</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+                <!-- Header -->
+                <div class="d-flex align-items-center justify-content-between header bg-light p-2">
+                    
+                    <div class="d-flex align-items-center search-bar mx-auto">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    
+<button class="btn btn-outline-secondary search-button"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-light ml-2"><i class="fas fa-microphone"></i></button>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-light"><i class="fas fa-bell"></i></button>
+                        <button class="btn btn-light ml-2"><i class="fas fa-user-circle"></i></button>
+                    </div>
+                </div>
+
+                <!-- Horizontal menu -->
+                <div class="d-flex justify-content-between horizontal-menu bg-light mt-2 p-2 rounded border">
+                    <button class="btn btn-light">Tất cả</button>
+                    <button class="btn btn-light">Âm nhạc</button>
+                    <button class="btn btn-light">Trò chơi</button>
+                    <button class="btn btn-light">Danh sách kết hợp</button>
+                    <button class="btn btn-light">Trực tiếp</button>
+                    <button class="btn btn-light">Đọc rap</button>
+                    <button class="btn btn-light">Nấu ăn</button>
+                    <button class="btn btn-light">Bóng đá</button>
+                    <button class="btn btn-light">Mới tải lên gần đây</button>
+                    <button class="btn btn-light">Đã xem</button>
+                    <button class="btn btn-light">Đề xuất mới</button>
+                </div>
+
+                <!-- Video Cards -->
+                <!-- Video Cards -->
+<div class="row  mt-2">
+    <div class="col-md-4">
+        <div class="card video-card">
+            <img src="C:\Users\Van\Pictures\Screenshots/1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="video-title">Nhất sinh nhất niệm - Thiện Y Thuần (OST Kỳ Kim Triêu) | 一生一念 - 单依纯 (OST 祈今朝)</p>
+                <p class="video-text">
+                    Every Summertime<br>16 N lượt xem</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card video-card">
+            <img src="C:\Users\Van\Pictures\Screenshots/2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="video-title">I'm comebackk | Start Lục bảo 1 | Không cao thủ không off</p>
+                <p class="video-text">Em Chè ĐTCL <br>7,9 N người đang xemTRỰC TIẾP</p>
+            </div>
+            <span class="live-icon"><i class="fas fa-circle"></i> Trực tiếp</span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card video-card">
+            <img src="C:\Users\Van\Pictures\Screenshots/3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="video-title">[MV] 張杰 Jason - 雲之羽 (《雲之羽》影視劇主題曲) 官方高畫質 Official HD</p>
+                <p class="video-text">Jason Zhang - Chủ đề <br>3Tr lượt xem</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-md-4">
+        <div class="card video-card">
+            <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="video-title">WILD RIFT / TOP 1 JAX JUNGLE VS MASTER YI GREAT MASTER RANKING</p>
+                <p class="video-text">Duy Gấu Top 1 Jax <br>819 lượt xem</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card video-card">
+            <img src="C:\Users\Van\Pictures\Screenshots/4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="video-title">The Story of Pearl Girl - Official Preview | Zhao Lusi/Liu Yuning | YOUKU</p>
+                <p class="video-text">YOUKU English-Get APP now
+                   <br> 3,38 Tr người đăng ký</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card video-card">
+            <img src="C:\Users\Van\Pictures\Screenshots/5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="video-title">Trailer:Bai Lu & Ao Ruipeng Embark on a Fantastic Adventure | Moonlight Mystique | 白月梵星 | iQIYI</p>
+                <p class="video-text">
+                    iQIYI 爱奇艺 - Get the iQIYI APP <br>
+                    5,78 Tr người đăng ký</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
